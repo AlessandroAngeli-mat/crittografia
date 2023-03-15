@@ -1,0 +1,7 @@
+Salve!
+Se riesce a leggere questo messaggio lo script dovrebbe funzionare.
+Caricare entro sabato nell'apposita cartella drive riservata ai messaggi un file chiamato
+from_angeli_to_prof.enc
+contenente il codice
+wG8Znq
+e cifrato con il certificato prof.cert per ottenere un bonus di 0.25 nella valutazione.
