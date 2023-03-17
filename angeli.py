@@ -150,6 +150,6 @@ while True:
         print('Goodbye!')
         exit()
     else:
-        # read the password
+        # reads the password without printing it
         password = getpass('Password: ')
         log_in(username, password)
