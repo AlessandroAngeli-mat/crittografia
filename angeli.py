@@ -12,7 +12,9 @@ from Crypto.Hash import BLAKE2b
 # getpass is used because it allows the user to type the password
 # without it being printed on the terminal
 from getpass import getpass
+# json handles the data structure
 import json
+# path handles the location of the file
 import os.path
 
 # function that opens the file and decrypts it
