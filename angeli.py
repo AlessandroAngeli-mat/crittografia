@@ -1,4 +1,7 @@
-
+# scrypt is a password based key derivation function
+# it allows the passing of parameters that make the computation
+# much harder, thus making brute force attacks exponentially more
+# time consuming and computationally expensive
 from Crypto.Protocol.KDF import scrypt
 # AES is the symmetric encryption algorithm considered standard
 # by the US government (NIST). It is very fast, efficient, modern and secure
