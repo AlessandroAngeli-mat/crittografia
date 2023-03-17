@@ -1,5 +1,9 @@
+
 from Crypto.Protocol.KDF import scrypt
-# 
+# AES is the symmetric encryption algorithm considered standard
+# by the US government (NIST). It is very fast, efficient, modern and secure
+# If implemented correctly, it also provides security against
+# side channel attacks (avoid the S-box implementation)
 from Crypto.Cipher import AES
 # imported to generate 16 random bytes used in the salt
 # which is used in the key derivation process
