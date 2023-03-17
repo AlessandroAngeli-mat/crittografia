@@ -4,8 +4,8 @@ from Crypto.Cipher import AES
 # imported to generate 16 random bytes used in the salt
 # which is used in the key derivation process
 from Crypto.Random import get_random_bytes
-# blake2b was chosen because it is extremely fast, it is used in Argon2
-# the winner of the Password Hashing Competition and it also protects
+# blake2b was chosen because it is extremely fast, it is used in Argon2,
+# the winner of the Password Hashing Competition, and it also protects
 # against side channel attacks
 from Crypto.Hash import BLAKE2b
 # getpass is used because it allows the user to type the password
