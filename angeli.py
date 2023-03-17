@@ -57,18 +57,24 @@ def save_and_exit(path, password, credentials):
         out_file.write(tag)
         out_file.write(ciphertext)
 
+# function that looks for credentials and adds them if they don't exist
+# - query: string containing the searched credentials
+# - dic: dict extracted from the decypted file containing all credentials
+# returns dic, whether it has been updated or not
 
 def search_and_add(query, dic):
+    # if credentials are found print them on screen
     if query in dic:
         print('username: ', dic[query]['username'])
         print('password: ', dic[query]['password'])
+    # if the credentials are not found, ask them to the user
+    # and add them to the dict
     else:
         prompt = 'Credentials not found. Add new entry?'
         prompt += '\n(y to continue, anything else to cancel)\n'
         add = input(prompt)
         if add == 'y':
             username_n = input('Insert username: ')
-            # leggi la password in maniera opportuna
             password_n = getpass('Insert password: ')
             dic[query] = {
                     'username': username_n,
