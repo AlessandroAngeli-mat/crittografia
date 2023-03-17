@@ -1,6 +1,9 @@
 from Crypto.Protocol.KDF import scrypt
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
+# blake2b was chosen because it is extremely fast, it is used in Argon2
+# the winner of the Password Hashing Competition and it also protects
+# against side channel attacks
 from Crypto.Hash import BLAKE2b
 from getpass import getpass
 import json
