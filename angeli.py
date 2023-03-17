@@ -6,7 +6,8 @@ from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 # blake2b was chosen because it is extremely fast, it is used in Argon2,
 # the winner of the Password Hashing Competition, and it also protects
-# against side channel attacks
+# against side channel attacks. 2b was chosen because it allows up to
+# 64 bytes
 from Crypto.Hash import BLAKE2b
 # getpass is used because it allows the user to type the password
 # without it being printed on the terminal
